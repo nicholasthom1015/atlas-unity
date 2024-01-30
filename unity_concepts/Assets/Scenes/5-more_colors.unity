@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5459374675763194861, guid: e36c19cd4cb66a54fbaa910ca563c23c, type: 3}
       propertyPath: m_Name
-      value: Black Ball
+      value: Red Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -258,7 +258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5459374675763194861, guid: e36c19cd4cb66a54fbaa910ca563c23c, type: 3}
       propertyPath: m_Name
-      value: Green Ball
+      value: Blue Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -331,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5459374675763194861, guid: e36c19cd4cb66a54fbaa910ca563c23c, type: 3}
       propertyPath: m_Name
-      value: Blue Ball
+      value: Black Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -675,7 +675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5459374675763194861, guid: e36c19cd4cb66a54fbaa910ca563c23c, type: 3}
       propertyPath: m_Name
-      value: Red Ball
+      value: Green Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
