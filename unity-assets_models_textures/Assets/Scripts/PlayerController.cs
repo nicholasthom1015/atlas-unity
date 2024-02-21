@@ -1,6 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
+//using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour
 //public class CursorLockExample : MonoBehaviour
@@ -8,6 +11,7 @@ public class Player : MonoBehaviour
     public float speed = 10f; //Controls velocity multiplier
     public Vector2 turn;
     public float sensitivity = .5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,4 +33,16 @@ public class Player : MonoBehaviour
         transform.localRotation = Quaternion.Euler(0, turn.x, 0);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Death Zone"))
+        {
+            StartCoroutine(LoadScene(3));
+        }
+    }
+    IEnumerator LoadScene(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene(0);
+    }
 }
