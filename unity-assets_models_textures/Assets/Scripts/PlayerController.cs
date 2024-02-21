@@ -37,12 +37,7 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Death Zone"))
         {
-            StartCoroutine(LoadScene(3));
+            transform.position = new Vector3(0, 3, 1);
         }
-    }
-    IEnumerator LoadScene(float seconds)
-    {
-        yield return new WaitForSeconds(seconds);
-        SceneManager.LoadScene(0);
     }
 }
