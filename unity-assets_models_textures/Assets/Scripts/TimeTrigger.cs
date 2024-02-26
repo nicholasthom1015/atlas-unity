@@ -8,7 +8,7 @@ public class TimeTrigger : MonoBehaviour
     private Timer time;
     // Start is called before the first frame update
 
-     void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
