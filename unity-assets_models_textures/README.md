@@ -5,4 +5,4 @@ https://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cl
 
 https://www.kenney.nl/assets/nature-kit
 
-https://assetstore.unity.com/packages/2d/textures-materials/sky/free-stylized-skybox-212257
+https://assetstore.unity.com/packages/3d/3le-low-poly-cloud-pack-65911
