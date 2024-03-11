@@ -1176,6 +1176,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2277600693749949315, guid: 4772a6e8aeb04f14b87c3399dec76c1b, type: 3}
+      propertyPath: m_Name
+      value: ExitText
+      objectReference: {fileID: 0}
     - target: {fileID: 4143526014114345313, guid: 4772a6e8aeb04f14b87c3399dec76c1b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1304,6 +1308,10 @@ PrefabInstance:
     - target: {fileID: 1182615693665645014, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_Name
       value: OptionsButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291981502894043143, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
+      propertyPath: m_Name
+      value: OptionsText
       objectReference: {fileID: 0}
     - target: {fileID: 6037060491496220457, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_Pivot.x
