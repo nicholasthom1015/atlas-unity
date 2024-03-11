@@ -1172,10 +1172,6 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 358983108075215172, guid: 4772a6e8aeb04f14b87c3399dec76c1b, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2277600693749949315, guid: 4772a6e8aeb04f14b87c3399dec76c1b, type: 3}
       propertyPath: m_Name
       value: ExitText
@@ -1300,10 +1296,6 @@ PrefabInstance:
     - target: {fileID: 291372060119947986, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 291372060119947986, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1182615693665645014, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_Name
