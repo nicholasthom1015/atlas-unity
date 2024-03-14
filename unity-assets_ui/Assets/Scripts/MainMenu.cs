@@ -6,13 +6,33 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    //public void LevelSelect(int level);
-    //public void ButtonClicked(int buttonNo);
+    [SerializeField] private bool isL1;
+    [SerializeField] private bool isL2;
+    [SerializeField] private bool isL3;
+    [SerializeField] private bool isOp;
+   
+   public void LoadScene(int sceneIndex)
+   {
+        if(isOp)
+            {
+                SceneManager.LoadScene(1);
+            }
+            
+        if(isL1)
+            {
+                SceneManager.LoadScene(2);
+            }
 
-    void ButtonClicked(int buttonNo)
-    {
-        //Output this to console when the Button3 is clicked
-        Debug.Log("Button clicked = " + buttonNo);
-    }
-   // SceneManager.LoadScene(SceneManager.LevelSelect(1));
+        if(isL2)
+            {
+                SceneManager.LoadScene(3);
+            }
+
+        if(isL3)
+            {
+                SceneManager.LoadScene(4);
+            }
+
+        
+   }
 }
