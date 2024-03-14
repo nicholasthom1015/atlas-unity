@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 8578154488448058178}
   - component: {fileID: 2134228495613052653}
   m_Layer: 5
-  m_Name: BGMText
+  m_Name: SFXText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
