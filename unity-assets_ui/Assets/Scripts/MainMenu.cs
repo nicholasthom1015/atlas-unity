@@ -16,8 +16,9 @@ public class MainMenu : MonoBehaviour
         if(isOp)
             {
                 SceneManager.LoadScene(1);
+                OptionsMenu.Instance.previousScene = SceneManager.GetActiveScene().buildIndex;
             }
-            
+
         if(isL1)
             {
                 SceneManager.LoadScene(2);
