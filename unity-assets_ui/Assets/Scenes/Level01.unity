@@ -8104,6 +8104,19 @@ MonoBehaviour:
   speed: 10
   turn: {x: 0, y: 0}
   sensitivity: 1.5
+--- !u!114 &1428935145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428935138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5228cdfb4ddda448009d8d6beb2523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseCanvas: {fileID: 1853562812}
 --- !u!1001 &1433517431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10614,6 +10627,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bd8c99a8cba3f043922ba00b760fe1c, type: 3}
+--- !u!1 &1853562812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4708106453434182529, guid: c41e04b330f30b4499368894146da943, type: 3}
+  m_PrefabInstance: {fileID: 2939285561471098275}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1868933151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12143,6 +12161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4708106453434182529, guid: c41e04b330f30b4499368894146da943, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12290,6 +12312,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4294186875598813258, guid: e8cccbcc211cea143a5f11687f78f48e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1428935144}
+    - targetCorrespondingSourceObject: {fileID: 4294186875598813258, guid: e8cccbcc211cea143a5f11687f78f48e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1428935145}
   m_SourcePrefab: {fileID: 100100000, guid: e8cccbcc211cea143a5f11687f78f48e, type: 3}
 --- !u!1001 &9062869268023908912
 PrefabInstance:
