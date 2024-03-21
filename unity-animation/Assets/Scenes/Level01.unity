@@ -12218,6 +12218,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5249174807897769424, guid: 7e740d1fa9f7914449ed9a76b0c2076c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249174807897769424, guid: 7e740d1fa9f7914449ed9a76b0c2076c, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8696867085124182663, guid: 7e740d1fa9f7914449ed9a76b0c2076c, type: 3}
       propertyPath: m_Name
       value: CutsceneCamera
