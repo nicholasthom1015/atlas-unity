@@ -12222,6 +12222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutsceneCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 8857184066344617275, guid: 7e740d1fa9f7914449ed9a76b0c2076c, type: 3}
+      propertyPath: m_TargetDisplay
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
