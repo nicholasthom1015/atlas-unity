@@ -29,8 +29,8 @@ public class Player : MonoBehaviour
         move *= speed * Time.deltaTime;
         transform.Translate(move);
 
-        //turn.x += Input.GetAxis("Mouse X") * sensitivity;
-        //transform.localRotation = Quaternion.Euler(0, turn.x, 0);
+        turn.x += Input.GetAxis("Mouse X") * sensitivity;
+        transform.localRotation = Quaternion.Euler(0, turn.x, 0);
     }
 
     void OnTriggerEnter(Collider other)
