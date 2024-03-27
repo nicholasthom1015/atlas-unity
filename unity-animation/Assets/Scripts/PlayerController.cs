@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         turn.x += Input.GetAxis("Mouse X") * sensitivity;
         transform.localRotation = Quaternion.Euler(0, turn.x, 0);
 
-        if (rb.velocity.x != 0)
+        if (move.magnitude != 0)
         {
             animator.SetBool("IsMoving", true);
         }
