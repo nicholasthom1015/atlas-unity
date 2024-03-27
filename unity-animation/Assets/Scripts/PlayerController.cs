@@ -12,9 +12,14 @@ public class Player : MonoBehaviour
     public Vector2 turn;
     public float sensitivity = .5f;
 
+    private Animator animator;
+    private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponentInChildren<Animator>();
+        rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -31,7 +36,18 @@ public class Player : MonoBehaviour
 
         turn.x += Input.GetAxis("Mouse X") * sensitivity;
         transform.localRotation = Quaternion.Euler(0, turn.x, 0);
+
+        if (rb.velocity.x != 0)
+        {
+            animator.SetBool("IsMoving", true);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
     }
+
+        
 
     void OnTriggerEnter(Collider other)
     {
