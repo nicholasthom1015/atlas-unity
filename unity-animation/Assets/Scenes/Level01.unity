@@ -2249,6 +2249,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 044fea9e8951fdf4d9a55187f1d31d7b, type: 3}
   m_PrefabInstance: {fileID: 1783881576}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &427278103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 87407b1341c269044906a23966b242bb, type: 3}
+  m_PrefabInstance: {fileID: 1469776128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &428238202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5408,6 +5413,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d9838d7db310bdb448d112dc71c78f80, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1198359137}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d9838d7db310bdb448d112dc71c78f80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1469776129}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d9838d7db310bdb448d112dc71c78f80, type: 3}
       insertIndex: -1
@@ -5434,7 +5442,13 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'Boy:Hips'\n\tTransform 'Boy:LeftArm'\n\tTransform
+    'Boy:RightHandRing1'\n\tTransform 'Boy:RightHandThumb1'\n\tTransform 'Boy:LeftHandRing2'\n\tTransform
+    'Boy:Head'\n\tTransform 'Boy:LeftHandPinky2'\n\tTransform 'Boy:RightHandIndex2'\n\tTransform
+    'Boy:RightArm'\n\tTransform 'Boy:LeftHandIndex3'\n\tand more ...\n\tFrom animation
+    clip 'Jump'\n\tFrom animation clip 'Jump'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -8562,6 +8576,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6574238012773435326, guid: 09e0106ffcff5e74aa39739c9e03ffac, type: 3}
   m_PrefabInstance: {fileID: 1311498945}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1469776128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 969751329}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      propertyPath: m_Name
+      value: ty@Jump
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 87407b1341c269044906a23966b242bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1469776130}
+  m_SourcePrefab: {fileID: 100100000, guid: 87407b1341c269044906a23966b242bb, type: 3}
+--- !u!4 &1469776129 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 87407b1341c269044906a23966b242bb, type: 3}
+  m_PrefabInstance: {fileID: 1469776128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1469776130
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427278103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: abcbc2b6c6307c648991bda314eb2009, type: 3}
+  m_Controller: {fileID: 9100000, guid: ecf0c7f4e23fd39408f2cefbc220a1b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'Boy:Hips'\n\tTransform 'Boy:LeftArm'\n\tTransform
+    'Boy:RightHandRing1'\n\tTransform 'Boy:RightHandThumb1'\n\tTransform 'Boy:LeftHandRing2'\n\tTransform
+    'Boy:Head'\n\tTransform 'Boy:LeftHandPinky2'\n\tTransform 'Boy:RightHandIndex2'\n\tTransform
+    'Boy:RightArm'\n\tTransform 'Boy:LeftHandIndex3'\n\tand more ...\n\tFrom animation
+    clip 'Jump'\n\tFrom animation clip 'Jump'"
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1480540638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 044fea9e8951fdf4d9a55187f1d31d7b, type: 3}

@@ -45,6 +45,15 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
+
+        if (Input.GetKeyDown("space"))
+        {
+            animator.SetBool("IsJump", true);
+        }
+        else
+        {
+           animator.SetBool("IsJump", false);
+        }
     }
 
         
