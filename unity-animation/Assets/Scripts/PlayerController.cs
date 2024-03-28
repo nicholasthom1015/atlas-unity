@@ -30,13 +30,20 @@ public class Player : MonoBehaviour
         float zMove = Input.GetAxisRaw("Vertical"); // w key changes value to 1, s key changes value to -1
         float yMove = Input.GetAxisRaw("Jump");
 
+        if (Input.GetKey("space"))
+        {
+            animator.SetBool("IsJump", true);
+            animator.SetBool("IsMoving", false);
+        }
+        else
+        {
+           animator.SetBool("IsJump", false);
+        }
+
         Vector3 move = new Vector3(xMove, yMove, zMove);
         move *= speed * Time.deltaTime;
         transform.Translate(move);
-
-        turn.x += Input.GetAxis("Mouse X") * sensitivity;
-        transform.localRotation = Quaternion.Euler(0, turn.x, 0);
-
+       
         if (move.magnitude != 0)
         {
             animator.SetBool("IsMoving", true);
@@ -46,14 +53,8 @@ public class Player : MonoBehaviour
             animator.SetBool("IsMoving", false);
         }
 
-        if (Input.GetKeyDown("space"))
-        {
-            animator.SetBool("IsJump", true);
-        }
-        else
-        {
-           animator.SetBool("IsJump", false);
-        }
+        turn.x += Input.GetAxis("Mouse X") * sensitivity;
+        transform.localRotation = Quaternion.Euler(0, turn.x, 0);
     }
 
         
