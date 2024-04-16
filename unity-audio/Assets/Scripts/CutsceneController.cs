@@ -9,6 +9,7 @@ public class CutsceneController : MonoBehaviour
     public GameObject mainCamera;
     public GameObject playerController;
     public GameObject timerCanvas;
+    public GameObject timerTrigger;
 
     private bool cutsceneFinished = false;
 
@@ -18,6 +19,7 @@ public class CutsceneController : MonoBehaviour
         mainCamera.SetActive(false);
         playerController.SetActive(false);
         timerCanvas.SetActive(false);
+        timerTrigger.SetActive(false);
     }
 
     void Update()
@@ -41,6 +43,7 @@ public class CutsceneController : MonoBehaviour
         mainCamera.SetActive(true);
         playerController.SetActive(true);
         timerCanvas.SetActive(true);
+        timerTrigger.SetActive(true);
     }
 
     void DisableCutsceneController()
