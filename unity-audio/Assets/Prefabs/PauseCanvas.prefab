@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -300, y: -30}
-  m_SizeDelta: {x: -1000, y: -740}
+  m_AnchoredPosition: {x: -332.5, y: -30}
+  m_SizeDelta: {x: -1125, y: -740}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &52953866876469292
 CanvasRenderer:
@@ -349,7 +349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &729339363605569772
 RectTransform:
   m_ObjectHideFlags: 0
@@ -549,8 +549,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -30}
-  m_SizeDelta: {x: -980, y: -740}
+  m_AnchoredPosition: {x: 10, y: -31}
+  m_SizeDelta: {x: -1210, y: -740}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8252084390695954666
 CanvasRenderer:
@@ -1195,7 +1195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6037060491496220457, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -1000
+      value: -1125
       objectReference: {fileID: 0}
     - target: {fileID: 6037060491496220457, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1243,7 +1243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6037060491496220457, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 300
+      value: 332.5
       objectReference: {fileID: 0}
     - target: {fileID: 6037060491496220457, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_AnchoredPosition.y

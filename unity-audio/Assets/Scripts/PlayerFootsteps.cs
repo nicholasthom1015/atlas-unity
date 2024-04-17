@@ -23,7 +23,7 @@ public class PlayerFootsteps : MonoBehaviour
             if (Input.GetKey(KeyCode.W)) // Assuming W key is for running forward
             {
                 // Check the material of the ground
-                if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.1f, ground))
+                if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 3f, ground))
                 {
                     if (hit.collider.CompareTag("Grass"))
                     {
