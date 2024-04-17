@@ -3,7 +3,10 @@ guid: a9c8c3a7b0926884a94fd65251fc2a7f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - footstepSound: {instanceID: 0}
+  - footstepsRunningGrass: {fileID: 8300000, guid: 96f0b1ff886b48a4ea9d113bac49c1c5, type: 3}
+  - footstepsRunningRock: {fileID: 8300000, guid: a65171bff004c1e4099a05cea3566e04, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -442,7 +442,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4839258fa08b13b4b826197ab6499bc1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1dc105e290906943b1bee197ef7623a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 196748341}
 --- !u!1 &361286410
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,9 +713,9 @@ GameObject:
   - component: {fileID: 544828931}
   - component: {fileID: 544828930}
   - component: {fileID: 544828933}
+  - component: {fileID: 544828938}
   - component: {fileID: 544828934}
   - component: {fileID: 544828936}
-  - component: {fileID: 544828938}
   - component: {fileID: 544828935}
   - component: {fileID: 544828937}
   m_Layer: 5
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1dc105e290906943b1bee197ef7623a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 544828934}
 --- !u!82 &544828938
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1031,7 +1031,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4839258fa08b13b4b826197ab6499bc1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 39387d5171ce9b14f95498226b397a3f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2248,7 +2248,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4839258fa08b13b4b826197ab6499bc1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2341,6 +2341,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 562222282}
     m_Modifications:
+    - target: {fileID: 2815160594834757335, guid: 4772a6e8aeb04f14b87c3399dec76c1b, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4143526014114345313, guid: 4772a6e8aeb04f14b87c3399dec76c1b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2441,6 +2445,10 @@ PrefabInstance:
     - target: {fileID: 1182615693665645014, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_Name
       value: OptionsButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450586985566351201, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6037060491496220457, guid: 370d36b93963fb8409b9f8816a6f7dad, type: 3}
       propertyPath: m_Pivot.x
