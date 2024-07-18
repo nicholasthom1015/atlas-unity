@@ -1233,7 +1233,9 @@ MonoBehaviour:
   raycastManager: {fileID: 1951277036}
   planeManager: {fileID: 151853166}
   startCanvas: {fileID: 2099970465}
-  Start: {fileID: 2000270008}
+  startButton: {fileID: 2000270008}
+  capsulePrefab: {fileID: 8384992380349286553, guid: 769b11f48fa73074d988b487e0634f01,
+    type: 3}
 --- !u!4 &505600635
 Transform:
   m_ObjectHideFlags: 0
@@ -4806,7 +4808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000270009}
   m_Layer: 5
-  m_Name: Start
+  m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5528,74 +5530,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02644bbd28622410a84cf154fc436b8a, type: 3}
---- !u!1001 &6600920798250054956
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176742911952682125, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8384992380349286553, guid: 769b11f48fa73074d988b487e0634f01,
-        type: 3}
-      propertyPath: m_Name
-      value: Capsule
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 769b11f48fa73074d988b487e0634f01, type: 3}
 --- !u!1001 &8125528244411619094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5750,4 +5684,3 @@ SceneRoots:
   - {fileID: 2099970469}
   - {fileID: 331264285}
   - {fileID: 505600635}
-  - {fileID: 6600920798250054956}
