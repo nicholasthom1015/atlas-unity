@@ -6,6 +6,13 @@ public class Control : MonoBehaviour
 {
     public float yToZVelocityRatio = 0.5f; // Adjust this ratio to scale Y velocity to Z velocity
     public float maxYVelocity = 10f; // Maximum allowed Y velocity
+    public float xAxisControlSpeed = 5f; // Speed at which the ball moves along the X axis when controlled by 'A' and 'D'
+    public float cameraFollowSpeed = 5f; // Speed at which the camera follows the ball
+    public Vector3 cameraOffset = new Vector3(0, 5, -10); // Offset from the ball position
+
+    public float initialZVelocity = 0f; // Initial Z-axis velocity
+    public float zAxisAcceleration = 1f; // Acceleration applied to the Z-axis velocity
+    public float maxZVelocity = 20f; // Maximum Z-axis velocity
 
     private Camera _camera;
     private bool _isDragging = false;
@@ -14,12 +21,15 @@ public class Control : MonoBehaviour
     private Vector3 _previousPosition;
     private Vector3 _velocity;
     private Rigidbody _rigidbody;
+    private bool _isMoving = false;
+    private float _currentZVelocity;
 
     void Start()
     {
         _camera = Camera.main;
         _rigidbody = GetComponent<Rigidbody>();
         _previousPosition = transform.position;
+        _currentZVelocity = initialZVelocity; // Initialize Z velocity
     }
 
     void OnMouseDown()
@@ -54,6 +64,9 @@ public class Control : MonoBehaviour
             // Set new velocity for the Rigidbody
             Vector3 newVelocity = new Vector3(_velocity.x, clampedYVelocity, zVelocity);
             _rigidbody.velocity = newVelocity;
+
+            // Indicate that the ball is now moving
+            _isMoving = true;
         }
     }
 
@@ -69,6 +82,23 @@ public class Control : MonoBehaviour
 
             // Update previous position
             _previousPosition = transform.position;
+        }
+
+        if (_isMoving)
+        {
+            // Handle X-axis control using 'A' and 'D' keys
+            float horizontalInput = Input.GetAxis("Horizontal"); // Maps to 'A' and 'D' keys
+
+            // Apply acceleration to Z-axis velocity
+            _currentZVelocity = Mathf.Clamp(_currentZVelocity + zAxisAcceleration * Time.deltaTime, initialZVelocity, maxZVelocity);
+
+            // Update Rigidbody velocity
+            Vector3 currentVelocity = _rigidbody.velocity;
+            _rigidbody.velocity = new Vector3(horizontalInput * xAxisControlSpeed, currentVelocity.y, _currentZVelocity);
+
+            // Update camera position to follow the ball
+            Vector3 targetCameraPosition = transform.position + cameraOffset;
+            _camera.transform.position = Vector3.Lerp(_camera.transform.position, targetCameraPosition, cameraFollowSpeed * Time.deltaTime);
         }
     }
 
