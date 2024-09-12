@@ -9,6 +9,7 @@ public class ARDrawing : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
+            Debug.Log("Input found");
             Touch touch = Input.GetTouch(0);
 
             if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
@@ -28,9 +29,9 @@ public class ARDrawing : MonoBehaviour
 
     private void Draw(Vector3 position)
     {
-        if (lineRenderer.positionCount == 0)
+        Debug.Log("Position is : " + position);
+        if (lineRenderer.positionCount == 1)
         {
-            lineRenderer.positionCount = 1;
             lineRenderer.SetPosition(0, position);
         }
         else

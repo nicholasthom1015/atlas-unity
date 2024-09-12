@@ -1239,6 +1239,12 @@ MonoBehaviour:
   m_EnvironmentDepthMode: 1
   m_EnvironmentDepthTemporalSmoothing: 1
   m_OcclusionPreferenceMode: 0
+--- !u!20 &331264295 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778331, guid: 48cb3fb68c91eb94999fd99957eb0cae,
+    type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &332374253
 GameObject:
   m_ObjectHideFlags: 0
@@ -6406,8 +6412,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.006481357
-        value: 1
+        time: 0
+        value: 0.20000076
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -6471,7 +6477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 1596216123}
-  arCamera: {fileID: 0}
+  arCamera: {fileID: 331264295}
 --- !u!4 &1596216125
 Transform:
   m_ObjectHideFlags: 0
