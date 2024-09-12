@@ -1,12 +1,9 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
 
 public class ARDrawing : MonoBehaviour
 {
     public LineRenderer lineRenderer;
-    public ARRaycastManager arRaycastManager;
+    public Camera arCamera; // Reference to the AR Camera
 
     private void Update()
     {
@@ -16,19 +13,15 @@ public class ARDrawing : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
             {
-                // Convert the touch position to a Vector2
-                Vector2 touchPosition = touch.position;
+                // Convert the touch position to a ray
+                Ray ray = arCamera.ScreenPointToRay(touch.position);
 
-                // Perform the raycast
-                List<ARRaycastHit> hitResults = new List<ARRaycastHit>();
-                if (arRaycastManager.Raycast(touchPosition, hitResults, TrackableType.PlaneWithinPolygon))
-                {
-                    if (hitResults.Count > 0)
-                    {
-                        Pose hitPose = hitResults[0].pose;
-                        Draw(hitPose.position);
-                    }
-                }
+                // Calculate a point in front of the camera to simulate the drawing plane
+                // Assuming we want to draw on a plane that is 1 meter in front of the camera
+                float distance = 1.0f; // Distance from the camera
+                Vector3 drawPosition = ray.origin + ray.direction * distance;
+
+                Draw(drawPosition);
             }
         }
     }
