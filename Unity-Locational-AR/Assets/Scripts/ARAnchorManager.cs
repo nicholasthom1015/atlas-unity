@@ -18,9 +18,11 @@ public class GPSAnchorManager : MonoBehaviour
         
         // Save the position
         gpsAnchors.Add(gpsPosition);
-        PlayerPrefs.SetString("GPSAnchor_" + (gpsAnchors.Count - 1), gpsPosition.ToString());
+        PlayerPrefs.SetString("GPSAnchor_" + (gpsAnchors.Count - 1), gpsPosition.x + "," + gpsPosition.y + "," + gpsPosition.z);
+        //PlayerPrefs.SetString("GPSAnchor_" + (gpsAnchors.Count - 1), gpsPosition.ToString());
         PlayerPrefs.SetInt("GPSAnchorCount", gpsAnchors.Count);
         PlayerPrefs.Save();
+        Debug.Log("Saving anchor: " + gpsPosition);
         
         // Optionally, instantiate the object at the converted position
         // Instantiate(yourPrefab, unityPosition, Quaternion.identity);
@@ -45,9 +47,23 @@ public class GPSAnchorManager : MonoBehaviour
 
     private Vector3 StringToVector3(string sVector)
     {
-        string[] sArray = sVector.Replace("(", "").Replace(")", "").Split(',');
-        return new Vector3(float.Parse(sArray[0]), float.Parse(sArray[1]), float.Parse(sArray[2]));
+        try
+        {
+            string[] sArray = sVector.Split(',');
+            return new Vector3(float.Parse(sArray[0]), float.Parse(sArray[1]), float.Parse(sArray[2]));
+        }
+            catch (System.Exception e)
+        {
+            Debug.LogError("Error parsing Vector3 from string: " + e.Message);
+            return Vector3.zero; // or handle it in another way
+        }
     }
+
+    // private Vector3 StringToVector3(string sVector)
+    // {
+    //     string[] sArray = sVector.Replace("(", "").Replace(")", "").Split(',');
+    //     return new Vector3(float.Parse(sArray[0]), float.Parse(sArray[1]), float.Parse(sArray[2]));
+    // }
 
     private Vector3 ConvertGPSToUnity(Vector3 gpsPosition)
     {
