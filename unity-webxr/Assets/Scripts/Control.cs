@@ -108,4 +108,16 @@ public class Control : MonoBehaviour
         mouseScreenPosition.z = _zCoord; // Use the z coordinate from OnMouseDown
         return _camera.ScreenToWorldPoint(mouseScreenPosition);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Wall"))
+        {
+            Vector3 newVelocity = new Vector3(0, 0, 0);
+            _rigidbody.velocity = newVelocity;
+            transform.position = new Vector3(15, 16, -23);
+            _rigidbody.isKinematic = true;
+            // _isMoving = false;
+        }
+    }
 }
