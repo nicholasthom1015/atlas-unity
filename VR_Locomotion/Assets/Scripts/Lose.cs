@@ -7,14 +7,14 @@ public class Lose : MonoBehaviour
 {
     public void LoadScene(int sceneIndex)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 }
