@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09014189, g: 0.11285706, b: 0.15346143, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.063658744, g: 0.067073785, b: 0.06053935, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1509,6 +1509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Exit: {fileID: 1162867801}
+  ExitDoor: {fileID: 0}
 --- !u!65 &205343497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6086,7 +6087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &827477143
 Light:
   m_ObjectHideFlags: 0
@@ -8863,7 +8864,7 @@ GameObject:
   - component: {fileID: 1162867802}
   - component: {fileID: 1162867801}
   m_Layer: 3
-  m_Name: Cube (107)
+  m_Name: ExitDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24120,7 +24121,7 @@ Transform:
   m_GameObject: {fileID: 1806472896}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 64.58, y: 1.86, z: -62.94}
+  m_LocalPosition: {x: 65.93, y: 1.02, z: -64.14}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []

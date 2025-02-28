@@ -19,17 +19,17 @@ public class FlashlightControl : MonoBehaviour
         inputActions["fire"].performed += TurnOnFlashlight;   
     }
 
+    [ContextMenu("ActivateFlashlight")]
+
+    void TurnOnFlashlight()
+    {
+        Spotlight.SetActive(!Spotlight.activeSelf);
+
+    }
     private void TurnOnFlashlight(InputAction.CallbackContext context)
     {
+        TurnOnFlashlight();
         //Debug.Log("Flashllight On");
-        if (Spotlight == true)
-        {
-            Spotlight.SetActive(true);
-        }
-        if (Spotlight == false)
-        {
-            Spotlight.SetActive(false);
-        }
     }
 
     void OnEnable()
