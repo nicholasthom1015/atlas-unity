@@ -107,7 +107,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Glow_Str_Min: 1
-    - _Glow_Str_max: 4
+    - _Glow_Str_max: 2
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005

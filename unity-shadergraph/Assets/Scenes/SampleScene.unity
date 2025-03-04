@@ -711,7 +711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &2025816872
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -911,8 +911,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
+  - {fileID: 2042746479}
   - {fileID: 474638920}
   - {fileID: 649536634}
   - {fileID: 2025816875}
   - {fileID: 418819485}
-  - {fileID: 2042746479}
