@@ -117,7 +117,7 @@ public class Control : MonoBehaviour
             _rigidbody.velocity = newVelocity;
             transform.position = new Vector3(15, 16, -23);
             _rigidbody.isKinematic = true;
-            // _isMoving = false;
+            _isMoving = false;
         }
     }
 }
