@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,9 @@ public class AudioPeer : MonoBehaviour
     public static float [] _freqBand = new float[8];
     public static float [] _bandBuffer = new float[8];
     private float [] _bufferDecrease = new float[8];
+    public static float [] _audioBand = new float[8];
+    public static float [] _audioBandBuffer = new float[8];
+    public float [] _freqBandHighest = new float[8];
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +27,18 @@ public class AudioPeer : MonoBehaviour
         GetSpectrumAudtioSource ();
         MakeFreqenyBands ();
         BandBuffer ();
+        CreateAudioBands ();
+    }
+
+    private void CreateAudioBands()
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            if (_freqBand[i] > _freqBandHighest[i])
+                _freqBandHighest[i] = _freqBand[i];
+            _audioBand[i] = _freqBand[i] / _freqBandHighest[i];
+            _audioBandBuffer[i] = _bandBuffer[i] / _freqBandHighest[i];
+        }
     }
 
     void BandBuffer()
@@ -44,7 +60,10 @@ public class AudioPeer : MonoBehaviour
 
     void GetSpectrumAudtioSource()
     {
-        _audioSource.GetSpectrumData(_samples, 0, FFTWindow.Blackman);
+        // _audioSource.GetSpectrumData(_samples, 0, FFTWindow.Blackman);
+        _audioSource.GetSpectrumData(_samples, 0, FFTWindow.Hanning);
+        // _audioSource.GetSpectrumData(_samples, 0, FFTWindow.Hamming);
+        // _audioSource.GetSpectrumData(_samples, 0, FFTWindow.BlackmanHarris);
     }
 
     void MakeFreqenyBands()
